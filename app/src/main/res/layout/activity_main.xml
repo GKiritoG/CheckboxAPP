@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇你喜歡的女星"
+        android:textColor="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <CheckBox
+        android:id="@+id/chk01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Momo"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <CheckBox
+        android:id="@+id/chk02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mina"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <CheckBox
+        android:id="@+id/chk03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sana"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <CheckBox
+        android:id="@+id/chk04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tzuyu"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:onClick="btnOK"
+        android:text="送出"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk04" />
+
+    <TextView
+        android:id="@+id/txvShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我喜歡的是 :"
+        app:layout_constraintStart_toStartOf="@+id/chk04"
+        tools:layout_editor_absoluteY="385dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
